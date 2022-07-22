@@ -51,6 +51,7 @@ class BaiduImageryProvider {
     this._rectangle = this._tilingScheme.rectangle
     this._credit = undefined
     this._style = options.style || 'normal'
+    this._errorEvent = new Cesium.Event()
   }
 
   get url() {
@@ -59,6 +60,10 @@ class BaiduImageryProvider {
 
   get token() {
     return this._token
+  }
+  
+  get errorEvent() {
+     return this._errorEvent
   }
 
   get tileWidth() {
