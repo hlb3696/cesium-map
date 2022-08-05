@@ -21,6 +21,8 @@ class BaiduImageryProvider {
         ? IMG_URL
         : options.style === 'vec'
         ? VEC_URL
+        : options.style === 'oyz'
+        ? options.url
         : CUSTOM_URL
     this._tileWidth = 256
     this._tileHeight = 256
