@@ -48,6 +48,19 @@ viewer.imageryLayers.addImageryProvider(
 )
 ```
 
+> 百度地图--自定义URL
+
+```js
+var options = {
+  style: 'oyz', // style: img、vec、normal、dark
+  url: 'http://192.168.1.91:8888/oyzMap/dz_baidu/{z}/{x}/{y}.png',
+  crs: 'WGS84' // 使用84坐标系，默认为：BD09
+}
+viewer.imageryLayers.addImageryProvider(
+  new Cesium.BaiduImageryProvider(options)
+)
+```
+
 ## TencentImageryProvider
 
 > 腾讯地图
