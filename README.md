@@ -21,7 +21,13 @@
 npm install @dvgis/cesium-map
 -----------------------------
 yarn add @dvgis/cesium-map
+-----------------------------
+yarn install
 ```
+
+`编译`
+```shell
+npm run build
 
 ```js
 require('@dvgis/cesium-map')
