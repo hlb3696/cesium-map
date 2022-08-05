@@ -24,14 +24,14 @@ yarn add @dvgis/cesium-map
 -----------------------------
 yarn install
 ```
+```js
+require('@dvgis/cesium-map')
+```
 
 `编译`
 ```shell
 npm run build
 
-```js
-require('@dvgis/cesium-map')
-```
 
 `CDN`
 
